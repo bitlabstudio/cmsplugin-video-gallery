@@ -1,0 +1,9 @@
+include AUTHORS
+include LICENSE
+include DESCRIPTION
+include CHANGELOG.txt
+include README.md
+graft video_gallery
+global-exclude *.orig *.pyc *.log *.swp
+prune video_gallery/tests/coverage
+prune video_gallery/.ropeproject
