@@ -1,11 +1,18 @@
 """Admin classes for the video_gallery app."""
-# from django.contrib import admin
+from django.contrib import admin
 
-# from . import models
+from cms.admin.placeholderadmin import PlaceholderAdmin
+
+from . import models
 
 
-# class YourModelAdmin(admin.ModelAdmin):
-#    list_display = ['some', 'fields', ]
-#    search_fields = ['some', 'fieds', ]
+class MovieAdmin(PlaceholderAdmin):
+    pass
 
-# admin.site.register(models.YourModel, YourModelAdmin)
+
+class CategoryAdmin(admin.ModelAdmin):
+    pass
+
+
+admin.site.register(models.Category, CategoryAdmin)
+admin.site.register(models.Movie, MovieAdmin)
