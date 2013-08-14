@@ -53,5 +53,9 @@ setup(
     include_package_data=True,
     install_requires=[
         'django',
+        'south',
+        'django-cms>=2.3.7',
+        'django-mptt>=0.5.2',
+        'Pillow',
     ],
 )
