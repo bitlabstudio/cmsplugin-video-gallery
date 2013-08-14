@@ -94,8 +94,8 @@ class Movie(models.Model):
         _('Movie url'),
         max_length=255,
         help_text=_(
-            'Vimeo or youtube video url.'
-            ' Example: http://www.youtube.com/watch?v=-iJ7bs4mTUY'),
+            'Youtube embed url.'
+            ' Example: http://www.youtube.com/embed/wrED69Ti3l4?feature=player_detailpage'),
         blank=True, null=True,
     )
 
