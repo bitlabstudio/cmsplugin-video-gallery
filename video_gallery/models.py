@@ -94,8 +94,8 @@ class Movie(models.Model):
         _('Movie url'),
         max_length=255,
         help_text=_(
-            'Youtube embed url.'
-            ' Example: http://www.youtube.com/embed/wrED69Ti3l4?feature=player_detailpage'),
+            'Youtube Video ID.'
+            ' Example: wrED69Ti3l4'),
         blank=True, null=True,
     )
 
