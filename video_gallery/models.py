@@ -137,6 +137,9 @@ class Movie(models.Model):
 
     objects = MovieManager()
 
+    class Meta:
+        ordering = ('date', )
+
     def __unicode__(self):
         if self.title:
             return self.title
