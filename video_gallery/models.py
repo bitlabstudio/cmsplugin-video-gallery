@@ -106,9 +106,15 @@ class Movie(models.Model):
         null=True, blank=True,
     )
 
-    width = models.PositiveSmallIntegerField(_('width'))
+    width = models.PositiveSmallIntegerField(
+        _('Width'),
+        null=True, blank=True,
+    )
 
-    height = models.PositiveSmallIntegerField(_('height'))
+    height = models.PositiveSmallIntegerField(
+        _('Height'),
+        null=True, blank=True,
+    )
 
     auto_play = models.BooleanField(
         _('Auto play'),
