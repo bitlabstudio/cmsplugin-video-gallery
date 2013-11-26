@@ -7,7 +7,7 @@ from . import models
 
 
 class MovieAdmin(PlaceholderAdmin):
-    pass
+    list_display = ('title', 'category', 'date')
 
 
 class CategoryAdmin(admin.ModelAdmin):
